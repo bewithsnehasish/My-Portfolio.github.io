@@ -50,9 +50,36 @@ nav .navbar {
 
 nav .navbar .logo a{
     color: #f54e38;
-    font-weight: 600;
-    font-size: 24px;
+    text-decoration: underline;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 0.4rem;
     text-transform: uppercase;
+    font-size: 200%;
+
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #FF0000 0%,
+      #099FFF 50%,
+      #FF00CC 100%,
+      #099FFF 0%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 nav .navbar .menu{
@@ -68,19 +95,32 @@ nav .navbar .menu li{
 nav .navbar .menu a{
     font-size: 18px;
     font-weight: 500;
-    color: white;
+    color: #fff;
     padding: 6px 0;
+    text-transform: uppercase;
     transition: all 0.4s ease;
 }
 
 .navbar .menu a:hover{
     color: #f54e38;
+    text-decoration: underline;
+    transition: all ease-in-out 0.2s;
 }
 
 .navbar .media-icons a{
     color: white;
     font-size: 25px;
     margin: 0 6px;
+}
+
+.navbar .media-icons img{
+  width: 30px;
+  color: white;
+  margin-right: 7px;
+}
+.navbar .media-icons img:hover{
+  scale: 1.2;
+  overflow: hidden;
 }
 
 nav.sticky .media-icons a{
@@ -117,8 +157,10 @@ nav .menu-btn,
 }
 
 .home .text-one {
-    font-size: 25px;
-    color: white;
+    font-size: 40px;
+    color: #fff;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 
 .home .text-two{
@@ -138,13 +180,15 @@ nav .menu-btn,
     margin-top: -17px;
 }
 
+
 .home .feature-img img{
     width: 1000px;
     position: absolute;
     top: 79px;
     left: 45%;
     z-index: 1;
-
+    border-width: 100px;
+    border-color: #c0ff00;
 }
 
 .home .button{
@@ -200,8 +244,8 @@ section .title span{
 }
 
 .about .left img{
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 450px;
     object-fit: cover;
     border-radius: 17px;
 
@@ -252,6 +296,8 @@ section .button button{
 
 #skill-title span{
     color: #16f330;
+    font-size: 35px;
+    text-decoration: underline;
 }
 
 .skills .skills-details{
@@ -288,6 +334,10 @@ section .button button{
     font-size: 18px;
     font-weight: 900;
     margin: 0 6px;
+}
+
+.skills-details .experience .exp span{
+  color: #16f330;
 }
 
 .skills-details .boxes{
@@ -458,7 +508,7 @@ footer .text span a {
        top:0;
        background:#f54e38;
        height:100vh;
-       max-width: 400px;
+       max-width: 500px;
        width:100%;
        padding-top:60px;
        flex-direction: column;
@@ -541,13 +591,15 @@ footer .text span a {
     }
     .home .feature-img img{
       display: block;
-      height: 381px;
-      width: 337px;
+      height: 50vh;
+      width: 50vh;
       position: absolute;
-      top: 400px;
-      left: 16px;
+      top: 50vh;
+      left: -1vh;
       object-fit: cover;
     }
+
+
     .home .button button{
       display: none;
     }
@@ -556,4 +608,10 @@ footer .text span a {
       color:#c0ff00;
     }
   }
+/* 
+  @media (max-width:360px){
+    .home .feature-img img{
+
+    }
+  } */
           
