@@ -182,9 +182,9 @@ nav .menu-btn,
 
 
 .home .feature-img img{
-    width: 1000px;
+    width: 66%;
     position: absolute;
-    top: 79px;
+    top: 10.4%;
     left: 45%;
     z-index: 1;
     border-width: 100px;
@@ -193,6 +193,8 @@ nav .menu-btn,
 
 .home .button{
     margin: 14px 0;
+    display: flex;
+    gap: 2%;
 }
 
 .home .button button{
@@ -204,12 +206,21 @@ nav .menu-btn,
     letter-spacing: 5px;
     text-transform: uppercase;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+.home .button button:hover{
+  scale: 1.1;
+  overflow: hidden;
+  background-color: #0c1452;
+  color: white;
+  border: 2px solid white;
 }
 
 /* About Section Styling */
 
 section{
-    padding-top: 40px;
+    padding-top: 2%;
 }
 
 section .content {
@@ -221,13 +232,13 @@ section .content {
 section .title{
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 section .title span{
     color: black;
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 300%;
+    font-weight: 1000;
     text-transform: uppercase;
     position: relative;
     padding-bottom: 8px;
@@ -244,8 +255,7 @@ section .title span{
 }
 
 .about .left img{
-    height: 600px;
-    width: 450px;
+    width: 90%;
     object-fit: cover;
     border-radius: 17px;
 
@@ -291,7 +301,7 @@ section .button button{
 }
 
 .skills .content{
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 #skill-title span{
