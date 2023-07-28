@@ -204,7 +204,19 @@ nav .menu-btn,
   height: 100%;
   border: 3px dashed white;
   border-radius: 100%;
+  animation: myAnim 1s ease 0s infinite normal backwards;
 }
+
+@keyframes myAnim {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 .home .home-content .cirle{
   position: absolute;
   left: 58.5vw;
@@ -213,6 +225,16 @@ nav .menu-btn,
   height: 82%;
   border: 3px dashed white;
   border-radius: 100%;
+  animation: circl 1s ease 0s infinite reverse backwards;
+}
+@keyframes circl {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .home .home-content .circl{
@@ -223,6 +245,7 @@ nav .menu-btn,
   height: 68%;
   border: 3px dashed white;
   border-radius: 100%;
+  animation: myAnim 1s ease 0s infinite normal backwards;
 }
 
 .home .button{
