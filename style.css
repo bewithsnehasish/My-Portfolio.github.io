@@ -254,7 +254,7 @@ nav .menu-btn,
 }
 
 .home .button button:hover{
-  scale: 1.05;
+  scale: 1.05 ;
   background-color: #0c1452;
   color: white;
   border: 2px solid white;
@@ -378,6 +378,7 @@ section .button button{
 
 .skills .flex-icons span:hover{
   scale: 1.2;
+  transition: all ease-in-out 0.3s;
 }
 
 
